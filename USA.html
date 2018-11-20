@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>USA</title>
+</head>
+<body>
+<script>
+    function USA(str) {
+        regexp = /^[0-9]{5}(?:[0-9]{4})?$/;
+        if(regexp.test(str)){
+            return true;
+        }
+        return false;
+    }
+    var zipcode = "03201-2105";
+    console.log(USA(zipcode));
+    zipcode = "78026";
+    console.log(USA(zipcode));
+</script>
+</body>
+</html>
